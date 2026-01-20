@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+/* App shell */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+/* Main grid */
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  gap: 16px;
+  padding: 16px;
+  overflow: hidden; /* IMPORTANT */
+}
+
+/* PDF panel */
+.pdf-panel {
+  overflow-y: auto;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Center controls (always visible) */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+}
+
+.controls button {
+  width: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+/* AI panel */
+.ai-panel {
+  overflow-y: auto;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.ai-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.controls input {
+  width: 90px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  margin: 8px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.text-preview {
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  opacity: 0.9;
+}
+

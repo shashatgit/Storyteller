@@ -1,0 +1,75 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+out/
+
+# Vite cache
+.vite/
+
+# Runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and test reports
+coverage/
+.nyc_output/
+
+# Local env files
+.env
+.env.*.local
+.env.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# Package manager folders and files
+.pnp.*
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/patches
+
+# Caches
+.cache/
+.parcel-cache/
+tmp/
+temp/
+
+# Misc
+bower_components/
+.history/
+.eslintcache
